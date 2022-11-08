@@ -100,12 +100,51 @@ class Car {
         this.make = make;
         this.model = model;
         this.color = color;
+        this.miles = 0;
+    }
+
+    drive(miles) {
+        this.miles += miles
+        console.log(`${this.make} increased miles by ${miles} \n Current miles: ${this.miles}`)
     }
 }
 
-let myCar = new Car('Tesla', 'Model Y', 'black');
-let myCar2 = new Car('Tesla', 'Model X', 'green');
-let myCar3 = new Car('Tesla', 'Model Z', 'purple');
+// let myCar = new Car('Tesla', 'Model Y', 'black');
+// let yourCar = new Car('Toyota', 'Highlander', 'blue');
 
-console.log(myCar.make);
-console.log(myCar['make']);
+// // console.log(myCar.make);
+// // console.log(myCar['make']);
+
+// console.log(myCar);
+// console.log(yourCar);
+
+// myCar.drive(30);
+// yourCar.drive(50);
+// myCar.drive(10);
+
+// console.log(myCar);
+// console.log(yourCar);
+
+// 7. Extending Classes
+class Truck extends Car {
+    // constructor needed for instantiation
+
+    constructor(make, model, color, payload) {
+        super(make, model, color) // all the properties from the Parent class - Car
+
+        this.payload = payload;
+    }
+    tow(weight) {
+        if(weight > this.payload) {
+            console.log('Max payload exceeded');
+        } else {
+        console.log('Towing successful');
+        }
+    }
+}
+
+let truck = new Truck('Ford', 'F450', 'black', 100);
+console.log(truck);
+truck.drive(15);
+truck.tow(99);
+truck.tow(101);
