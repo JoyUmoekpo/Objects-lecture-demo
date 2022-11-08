@@ -91,3 +91,21 @@ let fName = 'firstName'
 // console.log(teams);
 // delete teams.teamFour;
 // console.log(teams);
+
+// 6. Classes
+
+// Classes are uppercase and singular
+class Car {
+    constructor(make, model, color) {
+        this.make = make;
+        this.model = model;
+        this.color = color;
+    }
+}
+
+let myCar = new Car('Tesla', 'Model Y', 'black');
+let myCar2 = new Car('Tesla', 'Model X', 'green');
+let myCar3 = new Car('Tesla', 'Model Z', 'purple');
+
+console.log(myCar.make);
+console.log(myCar['make']);
