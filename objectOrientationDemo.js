@@ -10,6 +10,7 @@ let fName = 'firstName'
 // console.log('Dot notation', person.firstName);
 // console.log('Bracket notation', person['firstName']);
 // console.log('Bracket notation', person[fName]);
+//Brack notation evaluates to a string
 
 // 2.
 
@@ -72,7 +73,21 @@ let fName = 'firstName'
 
 // 4. job title
 
-person.job = 'Engineer';
-person['pets'] = ['dog', 'dragon'];
+// person.job = 'Engineer';
+// person['pets'] = ['dog', 'dragon'];
 
-console.log(person);
+// console.log(person);
+
+// 5. delete
+
+// let teams = {
+//     teamOne: ['ryan', 'alex', 'wyatt', 'tj'],
+//     teamTwo: ['henry', 'cole', 'charlie', 'zeke'],
+//     teamThree: ['porter', 'blake', 'june', 'owen'],
+//     teamFour: ['brian', 'riley', 'ezra', 'jordan'],
+//     teamFive: ['grey', 'milo', 'mckay', 'leo']
+// }
+
+// console.log(teams);
+// delete teams.teamFour;
+// console.log(teams);
