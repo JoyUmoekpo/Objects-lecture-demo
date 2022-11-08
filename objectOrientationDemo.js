@@ -60,12 +60,19 @@ let fName = 'firstName'
 
 // 3. 
 
-for (let attribute in person) {
-    console.log(`This is the key: ${attribute}`);
-}
+// for (let attribute in person) {
+//     console.log(`This is the key: ${attribute}`);
+// }
 
-console.log('------------------------------')
+// console.log('------------------------------')
 
-for (let attribute in person) {
-    console.log(`This is the value: ${person[attribute]}`);
-}
+// for (let attribute in person) {
+//     console.log(`This is the value: ${person[attribute]}`);
+// }
+
+// 4. job title
+
+person.job = 'Engineer';
+person['pets'] = ['dog', 'dragon'];
+
+console.log(person);
